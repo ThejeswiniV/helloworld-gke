@@ -32,8 +32,22 @@ Once you create the cluster, deploy your container in "Workloads"
  2. Click "Deploy"
  3. Specify container to "Existing container image"
  4. Select image path from *Artifact Registry*
- 5. click Deploy
+ 5. Click Deploy
  
 Step:6
+Once the Deployment is deployed
+ 1. Click on "Expose" in *Exposing Services*
+ 2. Again click "Expose" 
+                      or
+ 2. Click "Action"
+ 3. Select "Expose" and click "Expose"
+
+Step:7
+You will find the *External endpoints* in service details overview
+ 1. Click on the "IP Address"
+             or
+ 1. Navigate to *Services and Ingress*
+ 2. You'll find the service which exposed
+ 3. Click on the "Endpoint" 
 
 
