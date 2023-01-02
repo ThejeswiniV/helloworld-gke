@@ -2,21 +2,21 @@
 Deploy hello world application in GKE
 Python language
 
-1. In this quickstart, you will store your container in Artifact Registry and deploy it to your cluster from the registry. 
-Run the following command to create a repository named hello-repo in the same region as your cluster:
+Step:1 
+Run this command in shell
+ $ git clone https://github.com/ThejeswiniV/GKE-quick-start.git
 
-gcloud artifacts repositories create hello-repo \
-    --project=PROJECT_ID \
-    --repository-format=docker \
-    --location=REGION \
-    --description="Docker repository"
-    
-Replace the following values:
+Step:2
+Go to "Artifact Registry" in console, click "create repository"
+ 1. Give Name as "hello-repo"
+ 2. Format as "Docker"
+ 3. Location type "Region"
+    note: repository region and cluster region should be *same*
+ 4. Click create
 
-*PROJECT_ID* is your Google Cloud project ID
-*REGION* is the location for the repository, such as us-west1. In the next section, you'll create the cluster for your container image deployment in the same region.
-
-2. Build your container image using Cloud Build, which is similar to running docker build and docker push, but the build happens on Google Cloud:
+Step:3
+Create the cluster with same region for your container image deployment.
+Build your container image using Cloud Build, which is similar to running docker build and docker push, but the build happens on Google Cloud:
 
 gcloud builds submit \
   --tag REGION-docker.pkg.dev/PROJECT_ID/hello-repo/helloworld-gke .
