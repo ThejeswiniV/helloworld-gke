@@ -30,19 +30,10 @@ Step:5
 Once you create the cluster, deploy your container in "Workloads"
  1. Navigate to "workloads" 
  2. Click "Deploy"
- 3. Specify conta
+ 3. Specify container to "Existing container image"
+ 4. Select image path from *Artifact Registry*
+ 5. click Deploy
  
+Step:6
 
 
-gcloud builds submit \
-  --tag REGION-docker.pkg.dev/PROJECT_ID/hello-repo/helloworld-gke .
-  
-3. Creating a GKE cluster
-Choose the same region as your Artifact Registry repository.
-"such as us-west1"
-
-4.  In deployment.yaml file 
-Replace the following values in your file:
-
-$GCLOUD_PROJECT is your Google Cloud project ID:
-$LOCATION is the repository location, such as us-west1.
