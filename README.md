@@ -25,4 +25,8 @@ gcloud builds submit \
 Choose the same region as your Artifact Registry repository.
 "such as us-west1"
 
-4. 
+4.  In deployment.yaml file 
+Replace the following values in your file:
+
+$GCLOUD_PROJECT is your Google Cloud project ID:
+$LOCATION is the repository location, such as us-west1.
