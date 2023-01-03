@@ -1,10 +1,10 @@
 # GKE-quick-start
-Deploy hello world application in GKE
-Python language
+Deploy hello world application in GKE (In Python language)
 
 Step:1 
 Run this command in shell
- $ git clone https://github.com/ThejeswiniV/GKE-quick-start.git
+
+$ git clone https://github.com/ThejeswiniV/GKE-quick-start.git
 
 Step:2
 Go to "Artifact Registry" in console, click "create repository"
@@ -27,7 +27,8 @@ Replace the following values:
 *REGION* is the location for the repository, such as us-west1.
 
 Step:5
-Once you create the cluster, deploy your container in "Workloads"
+Once you create the cluster, Replace $Location and $projectID in "development.yaml" file.
+Now deploy your container in "Workloads"
  1. Navigate to "workloads" 
  2. Click "Deploy"
  3. Specify container to "Existing container image"
