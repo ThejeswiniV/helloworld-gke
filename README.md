@@ -1,12 +1,12 @@
 # GKE-quick-start
 Deploy hello world application in GKE (In Python language)
 
-Step:1 
+## Step:1 
 Run this command in shell
 
 $ git clone https://github.com/ThejeswiniV/GKE-quick-start.git
 
-Step:2
+# Step:2
 Go to "Artifact Registry" in console, click "create repository"
  1. Give Name as "hello-repo"
  2. Format as "Docker"
