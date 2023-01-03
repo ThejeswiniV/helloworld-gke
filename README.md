@@ -1,7 +1,7 @@
-# GKE-quick-start
+### GKE-quick-start
 Deploy hello world application in GKE (In Python language)
 
-## Step:1 
+# Step:1 
 Run this command in shell
 
 $ git clone https://github.com/ThejeswiniV/GKE-quick-start.git
