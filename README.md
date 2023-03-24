@@ -20,7 +20,8 @@ Create the cluster with same region for your container image deployment.
 Step:4
 Build your container image using Cloud Build, which is similar to running docker build and docker push, but the build happens on Google Cloud:
 Now run this command in cloud shell.
- $ gcloud builds submit \
+
+$ gcloud builds submit \
   --tag REGION-docker.pkg.dev/PROJECT_ID/hello-repo/helloworld-gke .
 Replace the following values:
 *PROJECT_ID* is your Google Cloud project ID
